@@ -15,6 +15,7 @@ namespace MultiLangMvc.Controllers
             : base(languageService, localizationService)
         
         {
+            //ilk test başarılı
             _logger = logger;
         }
 
