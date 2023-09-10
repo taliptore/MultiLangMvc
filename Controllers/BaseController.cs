@@ -36,10 +36,6 @@ namespace MultiLangMvc.Controllers
             return new HtmlString(resourceKey);
         }
 
-        //public string LANGUAGE_CODE()
-        //{
-        //    return Thread.CurrentThread.CurrentCulture.Name;
-        //}
         public override Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
             var culture = context.RouteData.Values["culture"] + "";

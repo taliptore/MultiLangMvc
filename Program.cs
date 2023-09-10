@@ -38,20 +38,12 @@ namespace MultiLangMvc
             
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
-            app.UseRouting();
+                     app.UseRouting();
             app.UseRequestLocalization();
             app.UseAuthorization();
-
             app.MapControllerRoute(
             name: "default",
              pattern: "{culture=tr-TR}/{controller=Home}/{action=Index}/{id?}");
-             //defaults: new {controller = "Home", action = "Index",  culture = "tr-TR" });
-
-
-
-
-
             app.Run();
         }
     }
